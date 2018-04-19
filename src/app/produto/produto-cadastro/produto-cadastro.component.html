@@ -1,0 +1,47 @@
+<!-- INíCIO do CONTEÚDO -->
+<section class="content-header">
+  <h1>
+    Cadastro de Produto
+  </h1>
+</section>
+<section class="content">
+  <section class="invoice">
+
+        <form (ngSubmit)="salvar(form)" autocomplete="off" #form="ngForm">
+
+          <div class="row invoice-info">
+            <div class="col-xs-12">
+              <p class="lead">Produto</p>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <div class="form-group" [class.has-error]="nome.invalid && nome.touched">
+                <label for="nome">Descrição</label>
+                <input type="text" class="form-control"
+                  placeholder="Descrição" #nome="ngModel" name="nome" required [(ngModel)]="produto.nome">
+                  <span class="help-block" *ngIf="nome.invalid && nome.touched"><i class="fa fa-remove"></i> O nome é obrigatório!</span>
+              </div>
+            </div>
+            <!-- /.col -->
+          </div>
+
+          <div class="row">
+              <div class="col-xs-12">
+                  <button type="submit" class="btn btn-success pull-right"
+                  [disabled]="form.invalid">Salvar</button>
+
+
+              </div>
+            </div>
+        </form>
+
+
+
+    </section>
+
+    <ds-produtos-list></ds-produtos-list>
+</section>
+
+
+
+
+<!-- FIM  do CONTEÚDO -->

@@ -1,0 +1,78 @@
+<!-- INíCIO do CONTEÚDO -->
+<section class="content-header">
+  <h1>
+    Cadastro Item de teste
+  </h1>
+</section>
+<section class="content">
+  <section class="invoice">
+
+        <form (ngSubmit)="salvar(form)" autocomplete="off" #form="ngForm">
+
+
+          <div class="row invoice-info">
+            <div class="col-xs-12">
+              <p class="lead">Nova Task:</p>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <div class="form-group">
+                <label class="control-label" for="inputSuccess">Task</label>
+                <input type="text" class="form-control" id="inputSuccess" placeholder="Task">
+                <span class="help-block"></span>
+              </div>
+            </div>
+            <!-- /.col -->
+          </div>
+
+  <div class="row">
+            <div class="col-sm-6 col-xs-12">
+              <div class="form-group">
+                <label class="control-label" for="inputSuccess">Cliente</label>
+                <input type="text" class="form-control" id="inputSuccess" placeholder="Cliente">
+                <span class="help-block"></span>
+              </div>
+            </div>
+    <div class="col-sm-2 col-xs-6">
+              <div class="form-group">
+                <label class="control-label" for="inputSuccess">Tipo</label>
+      <select class="form-control">
+      <option>Erro</option>
+      <option>Implementação</option>
+      </select>
+                <span class="help-block"></span>
+              </div>
+            </div>
+    <div class="col-sm-4 col-xs-6">
+              <div class="form-group">
+                <label class="control-label" for="inputSuccess">Link do Jira</label>
+                <input type="text" class="form-control" id="inputSuccess" placeholder="Link Jira">
+                <span class="help-block"></span>
+              </div>
+            </div>
+            <!-- /.col -->
+          </div>
+  <div class="row">
+            <div class="col-sm-12 col-xs-12">
+              <div class="form-group">
+                <label class="control-label" for="inputSuccess">Observações</label>
+                <textarea class="form-control" rows="3" placeholder="Observações"></textarea>
+                <span class="help-block"></span>
+              </div>
+            </div>
+
+            <!-- /.col -->
+          </div>
+
+        </form>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <a  href="builds.html" class="btn btn-success pull-right"><i class="fa fa-save"></i> Salvar
+            </a>
+          </div>
+        </div>
+
+    </section>
+
+    <ds-item-detail></ds-item-detail>
+</section>
